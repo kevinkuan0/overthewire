@@ -23,8 +23,16 @@ find inhere -type f -exec file '{}' \; | grep text
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```shell
 ls -alR | grep 1033 | grep "rw\-"
+find ./ -size 1033c
 find . -type f -exec file '{}' \; | grep text
 ```
 
 ##Level 6  
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+```shell
+find ./ -user bandit7 -group bandit6 -size 33c # basic
+find / -user bandit7 -group bandit6 -size 33c 2>&1 | grep -v denied | grep -v No  # parse error and output together
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null # ignore error
+```
+see http://stackoverflow.com/questions/2342826/how-to-pipe-stderr-and-not-stdout
 
